@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Liang Fan — AI/ML Scientist working in computer vision, deep learning and sports performance analytics.">
+  <meta name="theme-color" content="#f4f5f0">
+  <title>Liang Fan — AI/ML Scientist</title>
+  <style>
+    :root { color-scheme:light; --ink:#17211d; --muted:#65716b; --accent:#176b55; --paper:#f4f5f0; --line:#dce2dc; --card:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:var(--accent); text-underline-offset:4px; }
+    .wrap { width:min(1000px,calc(100% - 44px)); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .brand { color:var(--ink); text-decoration:none; font-weight:750; letter-spacing:.01em; }
+    nav ul { display:flex; flex-wrap:wrap; gap:24px; list-style:none; margin:0; padding:0; }
+    nav ul a { color:var(--muted); text-decoration:none; font-size:.94rem; }
+    nav ul a:hover { color:var(--accent); }
+    .hero { padding:100px 0 86px; display:grid; grid-template-columns:1fr 220px; gap:60px; align-items:center; }
+    .eyebrow { color:var(--accent); font-size:.8rem; font-weight:750; text-transform:uppercase; letter-spacing:.14em; }
+    h1 { margin:14px 0 20px; font-size:clamp(3rem,8vw,5.2rem); line-height:1.02; letter-spacing:-.06em; }
+    .intro { max-width:680px; color:var(--muted); font-size:1.15rem; }
+    .portrait { width:190px; aspect-ratio:1; display:grid; place-items:center; border-radius:50%; color:#245d49; background:linear-gradient(145deg,#dce9df,#b0cdb9); font-size:4rem; font-weight:700; letter-spacing:-.08em; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .button { display:inline-block; padding:9px 17px; border:1px solid var(--accent); border-radius:999px; text-decoration:none; font-weight:650; }
+    .button.primary { color:white; background:var(--accent); }
+    section { padding:38px 0 50px; border-top:1px solid var(--line); }
+    h2 { margin:0 0 22px; font-size:1.5rem; letter-spacing:-.03em; }
+    h3 { margin:0 0 5px; font-size:1.05rem; }
+    .about { max-width:760px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card { padding:21px; border:1px solid var(--line); border-radius:15px; background:var(--card); }
+    .card p { margin:7px 0 11px; color:var(--muted); font-size:.95rem; }
+    .meta { color:var(--accent); font-size:.8rem; font-weight:700; }
+    .timeline { display:grid; gap:0; }
+    .role { display:grid; grid-template-columns:155px 1fr; gap:20px; padding:19px 0; border-top:1px solid var(--line); }
+    .role:first-child { border-top:0; padding-top:0; }
+    .date { color:var(--muted); font-size:.9rem; }
+    .role p { margin:5px 0 0; color:var(--muted); }
+    .pubs { display:grid; gap:14px; }
+    .pub { padding:17px 19px; background:var(--card); border:1px solid var(--line); border-radius:13px; }
+    .pub p { margin:0; }
+    .pub .meta { display:block; margin-top:5px; }
+    .chips { display:flex; flex-wrap:wrap; gap:9px; }
+    .chip { padding:6px 12px; border:1px solid var(--line); border-radius:999px; background:#fff; color:#45544c; font-size:.88rem; }
+    .links { display:flex; flex-wrap:wrap; gap:20px; }
+    footer { padding:26px 0 36px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+    @media(max-width:680px) { .wrap{width:min(100% - 32px,1000px)} nav{align-items:flex-start;flex-direction:column;gap:12px} nav ul{gap:15px}.hero{padding:58px 0;grid-template-columns:1fr;gap:25px}.portrait{grid-row:1;width:118px;font-size:2.6rem}.grid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:4px} }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="Main navigation">
+    <a class="brand" href="#top">Liang Fan</a>
+    <ul><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#research">Research</a></li><li><a href="#contact">Contact</a></li></ul>
+  </nav></header>
+  <main id="top" class="wrap">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">AI/ML Scientist · Loughborough University</div>
+        <h1>Liang Fan</h1>
+        <p class="intro">I build practical AI systems with a focus on computer vision, deep learning and pattern recognition. My current work applies these methods to sports performance analytics.</p>
+        <div class="actions"><a class="button primary" href="#research">Explore my work</a><a class="button" href="https://github.com/LiangFan26">GitHub profile</a></div>
+      </div>
+      <div class="portrait" aria-label="Liang Fan initials">LF</div>
+    </div>
+    <section id="about">
+      <h2>About</h2>
+      <p class="about">I hold a PhD in Visual Computing from Cardiff University. Across academic and applied research roles, I have worked on face sketch recognition, skeleton-based identification, multimodal video search, digital health and dairy monitoring. I enjoy taking computer vision research from model development through to real-world deployment, and collaborating with students and industry partners.</p>
+      <div class="chips"><span class="chip">Computer Vision</span><span class="chip">Deep Learning</span><span class="chip">Sports Analytics</span><span class="chip">Multimodal AI</span><span class="chip">PyTorch</span><span class="chip">Python</span></div>
+    </section>
+    <section id="experience">
+      <h2>Selected experience</h2>
+      <div class="timeline">
+        <article class="role"><div class="date">Feb 2025 — Present</div><div><h3>AI/ML Scientist, Sports Performance Analytics</h3><div class="meta">Loughborough University</div><p>Delivering deep learning models for sports performance analysis and collaborating with AI.IO on demonstrations.</p></div></article>
+        <article class="role"><div class="date">Oct 2023 — Feb 2025</div><div><h3>Research Associate, CIDCOM</h3><div class="meta">University of Strathclyde</div><p>Developed and deployed AI models for the digital dairy chain, supporting calving detection, animal care and farm management.</p></div></article>
+        <article class="role"><div class="date">Nov 2021 — Oct 2023</div><div><h3>Research Associate, BT Ireland Innovation Centre</h3><div class="meta">Ulster University</div><p>Explored accessible model-training tools for skeleton-based recognition and supported PhD researchers.</p></div></article>
+        <article class="role"><div class="date">May 2021 — Nov 2021</div><div><h3>Research Associate, MVSE project</h3><div class="meta">Ulster University</div><p>Built components for a multimodal video search demonstrator, including indexing and search functionality.</p></div></article>
+      </div>
+    </section>
+    <section id="research">
+      <h2>Selected research</h2>
+      <div class="grid">
+        <article class="card"><h3>Sports field calibration with NeRF-guided camera optimization</h3><p>Camera calibration from a single image for sports field analysis.</p><span class="meta">CVPR Workshops 2025</span></article>
+        <article class="card"><h3>TacticalCalib: End-to-End 6-DoF Camera Pose Regression</h3><p>Camera pose regression for tactical sports camera calibration.</p><span class="meta">WACV 2026</span></article>
+        <article class="card"><h3>Attention-Modulated Triplet Network for Face Sketch Recognition</h3><p>Deep metric learning and attention for matching sketches with face photographs.</p><span class="meta">IEEE Access, 2021</span></article>
+        <article class="card"><h3>Siamese Graph Convolution Network for Face Sketch Recognition</h3><p>Graph convolutional methods for cross-domain face sketch recognition.</p><span class="meta">ICPR 2020</span></article>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="links"><a href="https://github.com/LiangFan26">GitHub</a><a href="https://scholar.google.com/" rel="me">Google Scholar</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Liang Fan</div></footer>
+</body>
+</html>
+
+
