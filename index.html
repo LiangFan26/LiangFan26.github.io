@@ -3,99 +3,152 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Liang Fan — AI/ML Scientist working in computer vision, deep learning and sports performance analytics.">
-  <meta name="theme-color" content="#f4f5f0">
+  <meta name="description" content="Liang Fan is an AI/ML Scientist at Loughborough University working in computer vision, deep learning and sports performance analytics.">
+  <meta name="theme-color" content="#f5f6f2">
   <title>Liang Fan — AI/ML Scientist</title>
   <style>
-    :root { color-scheme:light; --ink:#17211d; --muted:#65716b; --accent:#176b55; --paper:#f4f5f0; --line:#dce2dc; --card:#fff; }
+    :root { color-scheme:light; --ink:#202923; --muted:#626e66; --accent:#176b55; --paper:#f5f6f2; --line:#dce2dc; --card:#fff; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.68 system-ui,-apple-system,"Segoe UI",sans-serif; }
     a { color:var(--accent); text-underline-offset:4px; }
-    .wrap { width:min(1000px,calc(100% - 44px)); margin:auto; }
-    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    .wrap { width:min(1080px,calc(100% - 44px)); margin:auto; }
+    header { position:sticky; top:0; z-index:5; padding:15px 0; border-bottom:1px solid var(--line); background:rgba(245,246,242,.96); backdrop-filter:blur(12px); }
     nav { display:flex; justify-content:space-between; align-items:center; gap:24px; }
-    .brand { color:var(--ink); text-decoration:none; font-weight:750; letter-spacing:.01em; }
-    nav ul { display:flex; flex-wrap:wrap; gap:24px; list-style:none; margin:0; padding:0; }
-    nav ul a { color:var(--muted); text-decoration:none; font-size:.94rem; }
+    .brand { color:var(--ink); text-decoration:none; font-weight:760; letter-spacing:.01em; white-space:nowrap; }
+    nav ul { display:flex; flex-wrap:wrap; gap:19px; list-style:none; margin:0; padding:0; }
+    nav ul a { color:var(--muted); text-decoration:none; font-size:.9rem; }
     nav ul a:hover { color:var(--accent); }
-    .hero { padding:100px 0 86px; display:grid; grid-template-columns:1fr 220px; gap:60px; align-items:center; }
-    .eyebrow { color:var(--accent); font-size:.8rem; font-weight:750; text-transform:uppercase; letter-spacing:.14em; }
-    h1 { margin:14px 0 20px; font-size:clamp(3rem,8vw,5.2rem); line-height:1.02; letter-spacing:-.06em; }
-    .intro { max-width:680px; color:var(--muted); font-size:1.15rem; }
-    .portrait { width:190px; aspect-ratio:1; display:grid; place-items:center; border-radius:50%; color:#245d49; background:linear-gradient(145deg,#dce9df,#b0cdb9); font-size:4rem; font-weight:700; letter-spacing:-.08em; }
-    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
-    .button { display:inline-block; padding:9px 17px; border:1px solid var(--accent); border-radius:999px; text-decoration:none; font-weight:650; }
+    .hero { padding:72px 0 58px; display:grid; grid-template-columns:1fr 180px; gap:48px; align-items:center; }
+    .eyebrow,.meta { color:var(--accent); font-size:.82rem; font-weight:740; letter-spacing:.035em; }
+    h1 { margin:9px 0 12px; font-size:clamp(2.7rem,7vw,4.35rem); line-height:1.08; letter-spacing:-.055em; }
+    .intro { max-width:760px; color:var(--muted); font-size:1.1rem; }
+    .portrait { width:152px; aspect-ratio:1; display:grid; place-items:center; border-radius:50%; color:#245d49; background:linear-gradient(145deg,#dce9df,#b0cdb9); font-size:3.6rem; font-weight:720; letter-spacing:-.08em; }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+    .button { display:inline-block; padding:8px 15px; border:1px solid var(--accent); border-radius:999px; text-decoration:none; font-weight:650; font-size:.93rem; }
     .button.primary { color:white; background:var(--accent); }
-    section { padding:38px 0 50px; border-top:1px solid var(--line); }
-    h2 { margin:0 0 22px; font-size:1.5rem; letter-spacing:-.03em; }
-    h3 { margin:0 0 5px; font-size:1.05rem; }
-    .about { max-width:760px; color:var(--muted); }
-    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
-    .card { padding:21px; border:1px solid var(--line); border-radius:15px; background:var(--card); }
-    .card p { margin:7px 0 11px; color:var(--muted); font-size:.95rem; }
-    .meta { color:var(--accent); font-size:.8rem; font-weight:700; }
-    .timeline { display:grid; gap:0; }
-    .role { display:grid; grid-template-columns:155px 1fr; gap:20px; padding:19px 0; border-top:1px solid var(--line); }
-    .role:first-child { border-top:0; padding-top:0; }
+    section { padding:31px 0 39px; border-top:1px solid var(--line); scroll-margin-top:82px; }
+    h2 { margin:0 0 19px; font-size:1.42rem; letter-spacing:-.025em; }
+    h3 { margin:0 0 4px; font-size:1.02rem; line-height:1.45; }
+    .about { max-width:850px; color:var(--muted); margin-top:0; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:17px; }
+    .chip { padding:4px 10px; border:1px solid var(--line); border-radius:999px; background:#fff; color:#45544c; font-size:.82rem; }
+    .timeline { display:grid; }
+    .entry { display:grid; grid-template-columns:172px 1fr; gap:20px; padding:16px 0; border-top:1px solid var(--line); }
+    .entry:first-child { border-top:0; padding-top:0; }
     .date { color:var(--muted); font-size:.9rem; }
-    .role p { margin:5px 0 0; color:var(--muted); }
-    .pubs { display:grid; gap:14px; }
-    .pub { padding:17px 19px; background:var(--card); border:1px solid var(--line); border-radius:13px; }
-    .pub p { margin:0; }
-    .pub .meta { display:block; margin-top:5px; }
-    .chips { display:flex; flex-wrap:wrap; gap:9px; }
-    .chip { padding:6px 12px; border:1px solid var(--line); border-radius:999px; background:#fff; color:#45544c; font-size:.88rem; }
-    .links { display:flex; flex-wrap:wrap; gap:20px; }
-    footer { padding:26px 0 36px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
-    @media(max-width:680px) { .wrap{width:min(100% - 32px,1000px)} nav{align-items:flex-start;flex-direction:column;gap:12px} nav ul{gap:15px}.hero{padding:58px 0;grid-template-columns:1fr;gap:25px}.portrait{grid-row:1;width:118px;font-size:2.6rem}.grid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:4px} }
+    .entry p { margin:4px 0 0; color:var(--muted); }
+    .institution { color:var(--accent); font-size:.92rem; font-weight:650; }
+    .pub-list { display:grid; gap:13px; }
+    .pub { padding:15px 17px; border:1px solid var(--line); border-radius:12px; background:var(--card); }
+    .pub p { margin:4px 0 0; color:var(--muted); font-size:.93rem; }
+    .status { display:inline-block; margin-top:7px; padding:2px 8px; border-radius:999px; background:#edf3ee; color:#315e49; font-size:.76rem; font-weight:700; }
+    .cols { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+    .compact-list { margin:0; padding-left:19px; color:var(--muted); }
+    .compact-list li { padding:3px 0; }
+    .small { color:var(--muted); font-size:.9rem; }
+    footer { padding:24px 0 34px; border-top:1px solid var(--line); color:var(--muted); font-size:.87rem; }
+    @media(max-width:760px) { .wrap{width:min(100% - 32px,1080px)} header{position:static} nav{align-items:flex-start;flex-direction:column;gap:9px} nav ul{gap:13px}.hero{padding:46px 0 38px;grid-template-columns:1fr;gap:17px}.portrait{grid-row:1;width:106px;font-size:2.6rem}.entry{grid-template-columns:1fr;gap:3px}.cols{grid-template-columns:1fr;gap:24px} }
   </style>
 </head>
 <body>
   <header><nav class="wrap" aria-label="Main navigation">
     <a class="brand" href="#top">Liang Fan</a>
-    <ul><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#research">Research</a></li><li><a href="#contact">Contact</a></li></ul>
+    <ul><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#experience">Experience</a></li><li><a href="#publications">Publications</a></li><li><a href="#teaching">Teaching</a></li><li><a href="#service">Service</a></li></ul>
   </nav></header>
   <main id="top" class="wrap">
     <div class="hero">
       <div>
         <div class="eyebrow">AI/ML Scientist · Loughborough University</div>
         <h1>Liang Fan</h1>
-        <p class="intro">I build practical AI systems with a focus on computer vision, deep learning and pattern recognition. My current work applies these methods to sports performance analytics.</p>
-        <div class="actions"><a class="button primary" href="#research">Explore my work</a><a class="button" href="Fan-Liang-CV-2026.doc" download>Download CV</a><a class="button" href="https://github.com/LiangFan26">GitHub profile</a></div>
+        <p class="intro">I work on computer vision, artificial intelligence and pattern recognition. My research spans face sketch recognition, skeleton-based identification, multimodal video search, digital health, livestock monitoring and sports performance analytics.</p>
+        <div class="actions"><a class="button primary" href="Fan-Liang-CV-2026.doc" download>Download CV</a><a class="button" href="https://github.com/LiangFan26">GitHub</a><a class="button" href="https://scholar.google.com/">Google Scholar</a></div>
       </div>
       <div class="portrait" aria-label="Liang Fan initials">LF</div>
     </div>
+
     <section id="about">
       <h2>About</h2>
-      <p class="about">I hold a PhD in Visual Computing from Cardiff University. Across academic and applied research roles, I have worked on face sketch recognition, skeleton-based identification, multimodal video search, digital health and dairy monitoring. I enjoy taking computer vision research from model development through to real-world deployment, and collaborating with students and industry partners.</p>
-      <div class="chips"><span class="chip">Computer Vision</span><span class="chip">Deep Learning</span><span class="chip">Sports Analytics</span><span class="chip">Multimodal AI</span><span class="chip">PyTorch</span><span class="chip">Python</span></div>
+      <p class="about">I received my PhD in Visual Computing from Cardiff University, where I studied deep learning methods for face sketch recognition. I have since developed and deployed AI systems in academic and applied settings, including digital dairy care, skeleton-based recognition, multimodal video retrieval and sports analytics. I also contribute to teaching, student supervision and peer review.</p>
+      <div class="chips"><span class="chip">Computer Vision</span><span class="chip">Deep Learning</span><span class="chip">Pattern Recognition</span><span class="chip">Sports Analytics</span><span class="chip">Digital Health</span><span class="chip">Livestock Monitoring</span><span class="chip">PyTorch</span><span class="chip">Python</span><span class="chip">OpenCV</span></div>
     </section>
-    <section id="experience">
-      <h2>Selected experience</h2>
+
+    <section id="education">
+      <h2>Education</h2>
       <div class="timeline">
-        <article class="role"><div class="date">Feb 2025 — Present</div><div><h3>AI/ML Scientist, Sports Performance Analytics</h3><div class="meta">Loughborough University</div><p>Delivering deep learning models for sports performance analysis and collaborating with AI.IO on demonstrations.</p></div></article>
-        <article class="role"><div class="date">Oct 2023 — Feb 2025</div><div><h3>Research Associate, CIDCOM</h3><div class="meta">University of Strathclyde</div><p>Developed and deployed AI models for the digital dairy chain, supporting calving detection, animal care and farm management.</p></div></article>
-        <article class="role"><div class="date">Nov 2021 — Oct 2023</div><div><h3>Research Associate, BT Ireland Innovation Centre</h3><div class="meta">Ulster University</div><p>Explored accessible model-training tools for skeleton-based recognition and supported PhD researchers.</p></div></article>
-        <article class="role"><div class="date">May 2021 — Nov 2021</div><div><h3>Research Associate, MVSE project</h3><div class="meta">Ulster University</div><p>Built components for a multimodal video search demonstrator, including indexing and search functionality.</p></div></article>
+        <article class="entry"><div class="date">Oct 2016 — Mar 2021</div><div><h3>PhD in Visual Computing</h3><div class="institution">Cardiff University · School of Computer Science and Informatics</div><p>Thesis: “Face Sketch Recognition Using Deep Learning”. Supervisors: Dr Xianfang Sun and Prof Paul Rosin.</p></div></article>
+        <article class="entry"><div class="date">Sep 2013 — Jun 2016</div><div><h3>Master of Engineering in Software Engineering</h3><div class="institution">Inner Mongolia Agricultural University</div><p>Research degree, College of Computer and Information Engineering. GPA: 83.3/100. Supervisor: Prof Mei’an Li.</p></div></article>
+        <article class="entry"><div class="date">Sep 2009 — Jun 2013</div><div><h3>Bachelor of Engineering in Computer Science and Technology</h3><div class="institution">Southwest University Yucai College · now Chongqing College of Humanities, Science & Technology</div><p>GPA: 3.7.</p></div></article>
+        <article class="entry"><div class="date">Sep 2008 — Jul 2010</div><div><h3>Studies in Law</h3><div class="institution">Southwest University · Law School</div><p>CV lists a Bachelor of Laws qualification.</p></div></article>
       </div>
     </section>
-    <section id="research">
-      <h2>Selected research</h2>
-      <div class="grid">
-        <article class="card"><h3>Sports field calibration with NeRF-guided camera optimization</h3><p>Camera calibration from a single image for sports field analysis.</p><span class="meta">CVPR Workshops 2025</span></article>
-        <article class="card"><h3>TacticalCalib: End-to-End 6-DoF Camera Pose Regression</h3><p>Camera pose regression for tactical sports camera calibration.</p><span class="meta">WACV 2026</span></article>
-        <article class="card"><h3>Attention-Modulated Triplet Network for Face Sketch Recognition</h3><p>Deep metric learning and attention for matching sketches with face photographs.</p><span class="meta">IEEE Access, 2021</span></article>
-        <article class="card"><h3>Siamese Graph Convolution Network for Face Sketch Recognition</h3><p>Graph convolutional methods for cross-domain face sketch recognition.</p><span class="meta">ICPR 2020</span></article>
+
+    <section id="experience">
+      <h2>Academic and Research Experience</h2>
+      <div class="timeline">
+        <article class="entry"><div class="date">Feb 2025 — Present</div><div><h3>AI/ML Scientist, Sports Performance Analytics</h3><div class="institution">Loughborough University · School of Computer Science</div><p>Developing deep learning models for sports performance analysis and working with AI.IO on demonstrations.</p></div></article>
+        <article class="entry"><div class="date">Oct 2023 — Feb 2025</div><div><h3>Research Associate, CIDCOM</h3><div class="institution">University of Strathclyde · School of Electrical and Electronic Engineering</div><p>Applied AI to the Digital Dairy Value Chain, developed and deployed models in farm environments, and supported PhD students. Work included calving detection and animal care.</p></div></article>
+        <article class="entry"><div class="date">Nov 2021 — Oct 2023</div><div><h3>Research Associate, BT Ireland Innovation Centre</h3><div class="institution">Ulster University · School of Computing</div><p>Explored accessible model-training tools for skeleton-based identification, supervised research students and presented outputs to BT and Ulster University.</p></div></article>
+        <article class="entry"><div class="date">May 2021 — Nov 2021</div><div><h3>Research Associate, Multimodal Video Search by Examples</h3><div class="institution">Ulster University · School of Computing</div><p>Integrated software components into a demonstrator for indexing and multimodal search across face images, voice audio and video.</p></div></article>
+        <article class="entry"><div class="date">Apr 2022 — Dec 2022</div><div><h3>Research Assistant, Data Mining (part-time)</h3><div class="institution">Cardiff University · Business School</div><p>Used web data collection techniques to filter information from online sources.</p></div></article>
       </div>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="links"><a href="https://github.com/LiangFan26">GitHub</a><a href="https://scholar.google.com/" rel="me">Google Scholar</a></div>
+
+    <section id="projects">
+      <h2>Research Projects</h2>
+      <div class="pub-list">
+        <article class="pub"><h3>Sports Performance Analytics</h3><p>Deep learning for sports performance, including field calibration from a single image and tactical camera pose estimation.</p></article>
+        <article class="pub"><h3>Digital Dairy Value Chain</h3><p>Computer vision for cow and calf identification and welfare monitoring, including detection under blur and challenging farm conditions.</p></article>
+        <article class="pub"><h3>Skeleton-Based Identification and Digital Healthcare</h3><p>Accessible model-training methods for identifying people from skeleton data, with applications in objective health monitoring.</p></article>
+        <article class="pub"><h3>Multimodal Video Search by Examples</h3><p>A demonstrator combining a graphical interface and audio-visual library for search using example faces, voices, settings and subjects.</p></article>
+        <article class="pub"><h3>Face Photo-Sketch Recognition</h3><p>Siamese networks, attention-modulated triplet learning and graph convolution for cross-domain face recognition.</p></article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="pub-list">
+        <article class="pub"><h3>GAFTCalib: Topology-Aware Graph Alignment for Tactical Football Camera Calibration</h3><p>Liang Fan, Yuke He et al. WACV 2027.</p><span class="status">Accepted</span></article>
+        <article class="pub"><h3>Do Medical VLMs Look at the Lesion? A Lesion-Localized Counterfactual Audit of Chest X-Ray VLMs</h3><p>Yuke He, Liang Fan et al. WACV 2027.</p><span class="status">Accepted</span></article>
+        <article class="pub"><h3>CentralKV: Compressing Long-Context LLMs via Attention-Graph Centrality</h3><p>Yusen Wu, Huang Yinjun, Jia Yee Tan, Hao Li, Rongfeng Guo, Liang Fan et al. EMNLP 2026.</p><span class="status">Accepted</span></article>
+        <article class="pub"><h3>PianoGuard: When World Models Predict the Effect but Not the Cause</h3><p>Sheng Wang, Yanxi Lu, Yonghu Cui, Yingzhe Li, Liang Fan, Qing Yu. ECCV 2026 Workshop.</p><span class="status">Accepted</span></article>
+        <article class="pub"><h3>Sport Field Calibration with NeRF-Guided Camera Optimization from a Single Image</h3><p>Liang Fan, Xiaoqian Liu et al. IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2025.</p></article>
+        <article class="pub"><h3>TacticalCalib: End-to-End 6-DoF Camera Pose Regression for Tactical Camera Calibration</h3><p>Liang Fan, Xiaoqian Liu et al. IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026.</p></article>
+        <article class="pub"><h3>Deep Learning-Enabled Detection of Task-Relevant Objects for Sports Performance Analysis</h3><p>Liang Fan, Mohamad Saada et al. International Society of Biomechanics in Sports (ISBS) Conference.</p></article>
+        <article class="pub"><h3>Deblurring Object Detection in Low-Quality Livestock Images: A Transformer-Based Approach with Monocular Geometric Constraints</h3><p>Liang Fan, Zhi Chen et al. International Joint Conference on Neural Networks (IJCNN), 2026.</p></article>
+        <article class="pub"><h3>Attention-Modulated Triplet Network for Face Sketch Recognition</h3><p>Liang Fan, Xianfang Sun, Paul Rosin. IEEE Access 9, 12914–12921, 2021.</p><p><a href="https://doi.org/10.1109/ACCESS.2021.3049639">DOI</a></p></article>
+        <article class="pub"><h3>Monocular Vision Ranging and Camera Focal Length Calibration</h3><p>Lixia Xue, Meian Li, Liang Fan, Aixia Sun, Tian Gao. Scientific Programming, 2021, pp. 1–15.</p><p><a href="https://doi.org/10.1155/2021/9979111">DOI</a></p></article>
+        <article class="pub"><h3>Siamese Graph Convolution Network for Face Sketch Recognition</h3><p>Liang Fan, Xianfang Sun, Paul Rosin. 2020 25th International Conference on Pattern Recognition (ICPR), pp. 8008–8014.</p><p><a href="https://doi.org/10.1109/ICPR48806.2021.9412917">DOI</a></p></article>
+        <article class="pub"><h3>An Improved Siamese Network for Face Sketch Recognition</h3><p>Liang Fan et al. International Conference on Machine Learning and Cybernetics (ICMLC), 2019.</p><p><a href="https://doi.org/10.1109/ICMLC48188.2019.8949231">DOI</a></p></article>
+        <article class="pub"><h3>Fractal Image Compression Using Nonlinear Iterative Function System and Improved Genetic Algorithm</h3><p>Liang Fan, Meian Li. Applications Research of Computers, 2016.</p></article>
+      </div>
+      <p class="small">The CV also lists collaborative 2026 conference submissions and manuscripts under review. Contact me for the complete publication list.</p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="cols">
+        <div><h3>Guest Lecturer</h3><p class="small">Machine Learning (COP508), Loughborough University, 2025/26.</p><h3>Teaching Assistant</h3><p class="small">Cardiff University (2017–2021): Visual Computing, Computer Vision, Graphics, Object-Oriented Development with Java, Human-Centric Computing, Mathematics for Computer Science, Distributed and Cloud Computing, High-Performance Computing, and Applications of Machine Learning.</p></div>
+        <div><h3>Additional Teaching</h3><p class="small">Computer Vision, Ulster University (2022/23). Student supervision and research guidance at Ulster University and the University of Strathclyde.</p><h3>Invited Reviewer</h3><p class="small">Data Processing and Visualisation; Enhancing Your Employability, Cardiff University.</p></div>
+      </div>
+    </section>
+
+    <section id="service">
+      <h2>Professional Activities</h2>
+      <div class="cols">
+        <div><h3>Area and Session Chair</h3><ul class="compact-list"><li>ICASSP 2026, Machine Learning for Signal Processing track — Area Chair and Session Chair.</li><li>IJCNN 2026, Advances in Computer Vision I track — Session Chair.</li></ul><h3 style="margin-top:17px">Workshop Organiser</h3><ul class="compact-list"><li>BEST: Biomechanics-guided Multimodal Understanding of Human Movement for Sports and Health, BMVC 2026.</li><li>ICRAIC 2026 workshop.</li></ul></div>
+        <div><h3>Peer Review</h3><p class="small">Reviewer for journals and conferences including JMLC, ICME, UCC, IJCNN, MICCAI, ICLR Workshops, ICONIP, ICASSP, CVPR and BMVC.</p><h3>Committee Service</h3><p class="small">Committee member, International Conference on Energy Technology and Electrical Power (ETEP), 2024.</p></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills and Certificates</h2>
+      <div class="cols">
+        <div><h3>Technical</h3><p class="small">Python, MATLAB, OpenCV, OpenGL, PyTorch, Keras and TensorFlow. Also familiar with C++, LaTeX, C, Assembly, Java and Lua.</p><h3>Certificate</h3><p class="small">Cisco Certified Network Associate (CCNA), full score.</p></div>
+        <div><h3>Coaching and Officiating</h3><p class="small">Irish FA National Coaching Certificate (NCC); UEFA C licence in progress; Level 3 basketball referee (China).</p><h3>Contact</h3><p class="small"><a href="mailto:fanliang426@gmail.com">fanliang426@gmail.com</a> · <a href="https://github.com/LiangFan26">GitHub profile</a></p></div>
+      </div>
     </section>
   </main>
-  <footer><div class="wrap">© 2026 Liang Fan</div></footer>
+  <footer><div class="wrap">© 2026 Liang Fan · <a href="Fan-Liang-CV-2026.doc">Full CV</a></div></footer>
 </body>
 </html>
-
-
